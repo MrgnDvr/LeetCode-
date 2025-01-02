@@ -1,0 +1,54 @@
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        //given array nums must be looped through
+        //checks each array position and {0, 1, 2, 3, 4, etc.}
+        //against next num and then moves on to next num2
+        // for looping check for target 
+        // target //
+            //if numIndex1 + numIndex2 == target 
+            //  //return; 
+
+        //
+        //two vars 
+        //firstIndex = 0;
+        //secondIndex = 0;
+        //
+        //for int i = 0; while i < arraySize - 1; i++
+        //  //  indexOne = nums[i];
+        //  for int j = 0; while j < arraySize - 1; i++
+        //  //  if j =! i 
+        //      //  indexTwo = nums[j]; 
+        //  if indexOne + indexTwo == target 
+        //  // return; 
+
+        //brute force methodology
+
+        int arraySize = nums.size();
+
+        for (int i = 0; i < arraySize; i++){
+            int indexOne = nums[i];
+
+            for (int j = 0; j < arraySize; j++){
+                if (j != i){
+                    int indexTwo = nums[j]; 
+
+                    if (indexOne + indexTwo == target){
+                        return {i, j};
+                    }
+                }
+                
+
+               
+            }
+        }
+        return {};
+    }
+
+    
+
+
+
+
+    
+};
