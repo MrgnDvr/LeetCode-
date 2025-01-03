@@ -42,6 +42,7 @@ public:
                
             }
         }
+ //empty array returned if no solution is found 
         return {};
     }
 
